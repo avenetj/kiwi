@@ -11,6 +11,7 @@ Value Storage | Redis
 LoadBalancing | HAproxy
 
 # Usage
+** Installation**
 >The instructions assume that you have already installed [Docker](https://docs.docker.com/installation/) and [Docker Compose](https://docs.docker.com/compose/install/). 
 ```bash
   git clone https://github.com/avenetj/kiwi.git .
@@ -24,9 +25,9 @@ LoadBalancing | HAproxy
 The web application should be available on : http://127.0.0.1:5000/ping
 
 The following URL are implemented
-- /ping : incr the number of ping
+- /ping : increments the number of ping
 - /total : displays the total number of ping
-- /reset : reset the value stored to 0 
+- /reset : resets the value stored to 0 
 
 
 **Part 2**
@@ -37,11 +38,7 @@ The following URL are implemented
 The web application should be available on : http://127.0.0.1/ping (no need for the port)
 The **--scale app=2** runs 2 app containers. You can change the value to adjust your needs. 
 
-The following URL are implemented
-- /ping : incr the number of ping
-- /total : displays the total number of ping
-- /reset : reset the value stored to 0 
-
+The same URL as before are implemented. 
 
 Once you are done with the application, run this command to shut it down.
 ```bash
