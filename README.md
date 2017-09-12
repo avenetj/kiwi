@@ -20,7 +20,7 @@ LoadBalancing | HAproxy
 
 ```bash
   cd part1/app
-  docker-compose --build up
+  docker-compose up --build
  ```
 The web application should be available on : http://127.0.0.1:5000/ping
 
@@ -33,7 +33,7 @@ The following URL are implemented
 **Part 2**
 ```bash
   cd part2/app
-  docker-compose --build up --scale app=2
+  docker-compose up --build --scale app=2
 ```
 The web application should be available on : http://127.0.0.1/ping (no need for the port)
 The **--scale app=2** runs 2 app containers. You can change the value to adjust your needs. 
