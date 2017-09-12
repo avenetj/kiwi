@@ -13,10 +13,13 @@ LoadBalancing | HAproxy
 # Usage
 **Installation**
 >The instructions assume that you have already installed [Docker](https://docs.docker.com/installation/) and [Docker Compose](https://docs.docker.com/compose/install/). 
+
 ```bash
   git clone https://github.com/avenetj/kiwi.git .
 ```
 **Part 1** 
+
+> You must be root to use docker-compose commands and the docker deamon must be running
 
 ```bash
   cd part1/app
