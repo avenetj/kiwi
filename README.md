@@ -38,10 +38,15 @@ The following URL are implemented
 - /total : displays the total number of ping
 - /reset : resets the value stored to 0 
 
+Shut down the application by running 
+```bash
+  docker-compose down 
+```
+
 
 **Part 2**
 ```bash
-  cd part2/app
+  cd ../../part2/app
   docker-compose up --build -d --scale app=2
 ```
 The web application should be available on : http://127.0.0.1/ping (no need for the port)
