@@ -24,6 +24,12 @@ LoadBalancing | HAproxy
  ```
 The web application should be available on : http://127.0.0.1:5000/ping
 
+```bash
+  curl 127.0.0.1:5000/ping
+  curl 127.0.0.1:5000/total
+```
+
+
 The following URL are implemented
 - /ping : increments the number of ping
 - /total : displays the total number of ping
@@ -39,6 +45,14 @@ The web application should be available on : http://127.0.0.1/ping (no need for 
 The **--scale app=2** runs 2 app containers. You can change the value to adjust your needs. 
 
 The same URL as before are implemented. 
+
+```bash
+  curl 127.0.0.1/ping
+  curl 127.0.0.1/ping
+  curl 127.0.0.1/total
+```
+
+You should get two differents hostname (container name) when doing the curl commands.  
 
 Once you are done with the application, run this command to shut it down.
 ```bash
